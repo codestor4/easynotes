@@ -1,0 +1,200 @@
+
+/* New Note */
+.create-note {
+  margin: 30px 0px;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  background: #f0f0f0;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+.create-note input::placeholder, .create-note textarea::placeholder {
+  color: #ccc;
+}
+.new-note-title {
+  width: 100%;
+  padding: 10px;
+  margin: 0 0 20px;
+  border: 1px solid #bbb;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  display: block;
+  padding: 0.7em;
+  width: 100%;
+}
+.new-note-body {
+  resize: vertical;
+  margin: 0 0 20px;
+}
+
+/* Edit Note */
+
+#easynotes-wrapper li {
+  list-style: none;
+  padding: 20px 0 0;
+  margin: 50px 0;
+}
+.note-title-field {
+  width: 40%;
+  font-size: 1.85rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #0D3B66;
+  border: none;
+  padding: 7px;
+  outline: none;
+  position: relative;
+  margin-bottom:5px;
+  width:100%;
+}
+.note-body-field {
+  color: #333;
+  font-family: 'Open Sans', sans-serif;
+  resize: none;
+  display: block;
+  width: 100%;
+  line-height: 1.65;
+  font-size: 1.15rem;
+  padding: 7px;
+  border: 1px solid transparent;
+  height: 175px;
+  outline: none;
+  margin-bottom:20px;
+}
+
+.note-active-field, 
+.create-note input:focus {
+  outline: none;
+  border: 1px solid #000;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  display: block;
+}
+
+textarea[readonly] {
+  border:none;
+}
+
+/* PLUGIN BUTTONS */
+
+.edit-note,
+.delete-note,
+.submit-note,
+.update-note {
+  font-size: .9rem;
+  background-color: #EEE;
+  padding: 8px 16px;
+  display: inline-block;
+  margin-right: 7px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-note {
+  color: #FFF;
+  border: none;
+  background-color: #F95738;
+  line-height: 1.65;
+}
+
+.submit-note:hover {
+  background-color: rgb(235, 77, 45);
+}
+
+.edit-note:hover,
+.delete-note:hover {
+  background:#ddd;
+}
+.update-note {
+  display:none;
+  background: #8ed1fc;
+}
+.update-note:hover {
+  background:#64c2ff;
+}
+
+/* BUTTON CSS */
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 4px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 1.19rem;
+  padding: 12px 24px;
+  border: none;
+  outline: none;
+}
+
+.btn--small {
+  font-size: .88rem;
+  padding: 7px 13px;
+  font-weight: 300;
+}
+
+.btn--with-photo {
+  padding-left: 40px;
+  position: relative;
+}
+
+.btn--orange {
+  background-color: #EE964B;
+}
+
+.btn--orange:hover {
+  background: linear-gradient(#EE964B, rgb(235, 109, 0));
+}
+
+.btn--dark-orange {
+  background-color: #F95738;
+}
+
+.btn--dark-orange:hover {
+  background: linear-gradient(#F95738, rgb(204, 34, 0));
+}
+
+.btn--blue {
+  background-color: #0D3B66;
+}
+
+.btn--blue:hover {
+  background: linear-gradient(rgb(13, 80, 143), #0D3B66);
+}
+
+.btn--yellow {
+  background-color: #F4D35E;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .22);
+}
+
+.btn--yellow:hover {
+  background: linear-gradient(#F4D35E, rgb(240, 188, 0));
+}
+
+.btn--beige {
+  background-color: #FAF0CA;
+  color: #173f58;
+}
+
+.btn--beige:hover {
+  background-color: #F4D35E;
+}
+
+.btn--gray {
+  background-color: #222;
+}
+
+.btn--white {
+  background-color: #FFF;
+  color: #173f58;
+}
+
+.btn--white:hover {
+  background-color: #DDD;
+}
+
+.btn--large {
+  font-size: 1.3rem;
+  padding: 16px 34px;
+  border-radius: 7px;
+}
