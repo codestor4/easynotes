@@ -1,4 +1,4 @@
-# EasyNotes WordPress Plugin
+# WP-EasyNotes WordPress Plugin
 This plugin demonstrates CRUD operations with the help of WP REST API
 
 Video demo of this can be found here: https://d.pr/v/VwApKB
