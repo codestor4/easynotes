@@ -1,10 +1,10 @@
 <?php
 /**
- * @package EasyNotes
+ * @package WP-EasyNotes
  */
 
 /*
-Plugin Name: EasyNotes
+Plugin Name: WP-EasyNotes
 Plugin URI: https://omkarbhagat.com/
 Description: A CRUD demo to create, edit and delete notes via the REST API. Use [easynotes] shortcode on any page.
 Version: 1.0.0
