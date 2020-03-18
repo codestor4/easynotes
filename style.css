@@ -11,7 +11,8 @@
 .create-note input::placeholder, .create-note textarea::placeholder {
   color: #ccc;
 }
-.new-note-title {
+.new-note-title, 
+.new-note-body {
   width: 100%;
   padding: 10px;
   margin: 0 0 20px;
@@ -22,12 +23,22 @@
   padding: 0.7em;
   width: 100%;
 }
+
 .new-note-body {
   resize: vertical;
-  margin: 0 0 20px;
+  outline: 0;
+}
+
+.new-note-body:focus {
+  border:1px solid #000;
 }
 
 /* Edit Note */
+
+#easynotes-wrapper {
+  margin:0;
+  padding:0;
+}
 
 #easynotes-wrapper li {
   list-style: none;
@@ -57,7 +68,7 @@
   font-size: 1.15rem;
   padding: 7px;
   border: 1px solid transparent;
-  height: 175px;
+  min-height: 150px;
   outline: none;
   margin-bottom:20px;
 }

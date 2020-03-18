@@ -14,6 +14,9 @@ License: GPLv2 or later
 Text Domain: easynotes
 */
 
+if ( !defined( 'ABSPATH' ) )
+    exit;
+
 // Define constants.
 define( 'EASYNOTES_VERSION', '1.0.0' );
 define( 'EASYNOTES_PLUGIN_DIR', untrailingslashit( plugin_dir_path( __FILE__ ) ) );
@@ -23,7 +26,9 @@ define( 'EASYNOTES_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
 // Register the main shortcode
 add_shortcode( 'easynotes', 'en_main_shortcode' );
 function en_main_shortcode() {
-	return en_display_easynotes();
+  ob_start();
+  en_display_easynotes();
+  return ob_get_clean();
 }
 
 // Display the plugin interface
